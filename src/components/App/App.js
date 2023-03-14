@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Astrological Photo of the Day</h1>
-        <img className="App-logo" src={logo} />
+        <img className="App-logo" src={logo} alt="the NASA logo" />
       </header>
       <DateContextWrapper>
         <div className="App-content">
