@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { DateContext } from "../DateContextWrapper/DateContextWrapper";
 import { getData } from "../../utils/api";
 
+import './ContentRenderer.css';
+
 const ContentRenderer = () => {
     const { date } = useContext(DateContext);
 
@@ -16,7 +18,7 @@ const ContentRenderer = () => {
     
     if (content) {
         return (
-            <div>
+            <div className="content-wrapper">
                 <img alt="" src={content.url} />
             </div>
         );

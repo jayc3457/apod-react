@@ -1,7 +1,12 @@
+@import url(../../themes/color-vars.css);
+
+body {
+  background-color: var(--bg-color);
+}
+
 .App {
   text-align: center;
-  background-color: #282c34;
-  color: white;
+  color: var(--font-color);
   padding: 0 10%;
 }
 
@@ -18,11 +23,11 @@
 }
 
 .App-content {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--primary-color);
 }
