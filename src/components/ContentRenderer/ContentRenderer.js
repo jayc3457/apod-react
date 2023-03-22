@@ -19,7 +19,11 @@ const ContentRenderer = () => {
     if (content) {
         return (
             <div className="content-wrapper">
-                <img alt="" src={content.url} />
+                {content.media_type === 'video' ? (
+                    <iframe className="content-video" title={content.title} src={content.url}></iframe>
+                ) : (
+                    <img alt="" src={content.url} />
+                )}
             </div>
         );
     }
